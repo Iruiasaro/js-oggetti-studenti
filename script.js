@@ -36,5 +36,20 @@ for (var i = 0; i < studenti.length; i++) {
     console.log(studentIdentity.nome, studentIdentity.cognome);
   };
 
-  
 
+//Dare la possibilità all’utente, attraverso 3 prompt(), 
+var newName = prompt("Inserisci il tuo nome"); 
+var newSurname = prompt("Inserisci il tuo cognome");
+var newAge = prompt("Inserisci la tua età");
+
+//di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var newStudent = {
+    nome: newName,
+    cognome: newSurname,
+    age: newAge,
+};
+
+
+for (var key in newStudent) {
+    console.log(newStudent[key]);
+}
