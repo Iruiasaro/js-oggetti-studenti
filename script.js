@@ -49,7 +49,52 @@ var newStudent = {
     age: newAge,
 };
 
-
 for (var key in newStudent) {
     console.log(newStudent[key]);
 }
+
+
+//soluzione alternativa per terzo punto
+
+/*var mappaRichieste = [
+    {
+        domanda: "Inserisci il nome dello studente",
+        chiave: "nome"
+    },
+
+    {
+        domanda: "Inserisci il cognome dello studente",
+        chiave: "cognome"
+    },
+
+    {
+        domanda: "Inserisci il nome dello studente",
+        chiave: "età"
+    }
+
+]
+
+var nuovoStudente = {}
+
+for (var i = 0; i < mappaRichieste.length; i++) {
+
+    var oggMappa = mappaRichieste[i];
+
+    var risultatoPrompt = prompt(oggMappa.domanda);
+
+    var risultatoValidazione = true;
+
+    if(oggMappa.validation === "numero") {
+        i--
+        alert ("L'età inserita non è valida")
+
+        risultatoValidazione = true;
+    }
+    if (risultatoValidazione) {
+        nuovoStudente[oggMappa.chiave] =risultatoPrompt;
+    }
+}
+
+studenti.push(nuovoStudente);
+
+console.log(studenti);/*
